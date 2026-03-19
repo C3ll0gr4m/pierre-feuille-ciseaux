@@ -10,20 +10,17 @@ Jeu Pierre/Feuille/Ciseaux utilisant un smart contract Ethereum. Les parties son
 - Historique complet de ses parties et gains/pertes
 - Statistiques: victoires, défaites, égalités, P\&L net
 
-
 ### Admin
 
 - Vue globale de toutes les parties jouées
 - Suivi des commissions perçues
 - Modification du taux de commission (0-20%)
 
-
 ### Transparence
 
 - Toutes les parties et transactions visibles sur blockchain
 - Résultats déterministes via smart contract
 - Historique stocké on-chain
-
 
 ## Prérequis
 
@@ -33,17 +30,14 @@ Ganache (port 7545)
 MetaMask
 ```
 
-
 ## Installation et Lancement
 
-### 1. Cloner et Installer
+### 1. Installer
 
 ```bash
-git clone <ton-repo-url>
 cd pfc-blockchain
 npm install
 ```
-
 
 ### 2. Lancer Ganache
 
@@ -51,7 +45,6 @@ npm install
 Ganache → Quickstart Ethereum (port 7545)
 Copier l'adresse du 1er compte (admin)
 ```
-
 
 ### 3. Déployer le Smart Contract
 
@@ -63,7 +56,6 @@ Remix IDE:
 4. Deploy → Copier l'adresse
 ```
 
-
 ### 4. Configurer le Frontend
 
 ```
@@ -71,7 +63,6 @@ src/constants/contract.js:
 CONTRACT_ADDRESS = "0xADRESSE_CONTRAT"
 ADMIN_ADDRESS = "0xADRESSE_ADMIN"
 ```
-
 
 ### 5. Lancer
 
